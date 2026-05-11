@@ -15,6 +15,15 @@ class UmurMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        return $next($request);
+
+        $umur = $request->session()->get('umur');
+
+        if($umur >= 18){
+            return $next($request);
+        }
+
+        return back()->with('failed', 'Umur kamu belum cukup');
+
+
     }
 }

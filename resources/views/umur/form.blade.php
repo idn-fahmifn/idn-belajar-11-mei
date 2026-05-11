@@ -12,6 +12,10 @@
     <h1>Form Umur</h1>
     <p>Masukan nama dan umur kamu dibawah : </p>
 
+    @if (session('failed'))
+        <p>{{ session('failed') }}</p>
+    @endif
+
     <form action="{{ route('kirim-data') }}" method="post">
         <div class="">
             <label for="name">Nama Lengkap</label>
