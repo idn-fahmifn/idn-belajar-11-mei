@@ -29,16 +29,6 @@
                     </tr>
                 @endif
             @endforeach
-
-            @switch()
-                @case()
-                    
-                    @break
-            
-                @default
-                    
-            @endswitch
-
         </tbody>
     </table>
 
