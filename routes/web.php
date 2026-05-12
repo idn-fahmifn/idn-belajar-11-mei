@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\UmurController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
